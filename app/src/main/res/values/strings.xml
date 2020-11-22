@@ -1,3 +1,8 @@
 <resources>
+
     <string name="app_name">Test 2</string>
+    <string name="Button">Button</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
 </resources>

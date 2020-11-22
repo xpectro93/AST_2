@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 //TODO: Learn Java
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         TextView txtHello = findViewById(R.id.txtMessage);
 
         //If you want o hard code text use double quotations
-        txtHello.setText("Yo I been changed");
+        txtHello.setText("Yo");
+
 
 
     }
@@ -27,7 +29,13 @@ public class MainActivity extends AppCompatActivity {
     public void onBtnClick (View view) {
         TextView txtHello = findViewById(R.id.txtMessage);
 
-        txtHello.setText("I been clickableddddddddddd");
+        EditText editTxtName = findViewById(R.id.addFirstName);
+        //convert to string then set to variable then set variable to b new text value
+        String username = editTxtName.getText().toString();
+
+        //concat two strings
+        txtHello.setText("Hello " + username);
+
     }
 
 }
